@@ -7,7 +7,8 @@
 :root{
   font-size: 62.5%;
   --bg-color: #F9F4FB;
-  --bg-color-purple: linear-gradient(45deg, #343193, #302C63)
+  --bg-color-purple: linear-gradient(45deg, #343193, #302C63);
+  --bg-color-white: #FFFFFF;
 }
 
 body{
@@ -18,6 +19,7 @@ body{
   justify-content: center;
 }
 
+/*HEADER*/
 header{
   display: flex;
   flex-direction: column; 
@@ -30,5 +32,24 @@ header{
 #arrow{
   width: 5.8rem;
   height: 10.5rem;
-  border: 1px solid red;
+}
+/*HEADER*/
+
+/*MAIN*/
+main{
+  background: var(--bg-color-purple);
+  padding: 5.2rem 3.9rem;
+  margin: 9.3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5.0rem;
+}
+
+figure{
+  background: var(--bg-color-white);
+}
+
+figure img{
+  width: 8.0rem;
+  height: 8.0rem;
 }
