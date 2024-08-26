@@ -6,9 +6,12 @@
 
 :root{
   font-size: 62.5%;
+  font-family: "Mulish", sans-serif;
   --bg-color: #F9F4FB;
   --bg-color-purple: linear-gradient(45deg, #343193, #302C63);
   --bg-color-white: #FFFFFF;
+  --title-color: #B52184;
+  --p-color: #312D64;
 }
 
 body{
@@ -29,6 +32,19 @@ header{
   gap: 3.5rem;
 }
 
+header h1{
+  color: var(--title-color);
+  font-size: 3.2rem;
+  font-weight: 900;
+}
+
+header p{
+  color: var(--p-color);
+  font-size: 2.0rem;
+  font-weight: 400;
+
+}
+
 #arrow{
   width: 5.8rem;
   height: 10.5rem;
@@ -46,10 +62,24 @@ main{
 }
 
 figure{
+  border-radius: 2rem;
   background: var(--bg-color-white);
+  padding: 2.6rem 2.8rem;
 }
 
 figure img{
   width: 8.0rem;
   height: 8.0rem;
+}
+
+figure figcaption{
+  color: var(--title-color);
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin: 2rem 0 2rem 0;
+}
+
+figure p{
+  color: var(--p-color);
+  font-size: 1.5rem;
 }
