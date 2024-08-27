@@ -48,14 +48,15 @@ header p{
 #arrow{
   width: 5.8rem;
   height: 10.5rem;
+  margin-bottom: 9.3rem;
 }
 /*HEADER*/
 
 /*MAIN*/
 main{
+  width: 100%;
   background: var(--bg-color-purple);
   padding: 5.2rem 3.9rem;
-  margin: 9.3rem 0;
   display: flex;
   flex-direction: column;
   gap: 5.0rem;
@@ -82,4 +83,23 @@ figure figcaption{
 figure p{
   color: var(--p-color);
   font-size: 1.5rem;
+}
+/*MAIN*/
+
+/*CONTACT*/
+#contact-form{
+  background: var(--bg-color);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  padding: 7.8rem 4.0rem;
+  gap: 2.4rem;
+}
+
+#contact-form h1{
+  font-size: 3.2rem;
+  color: var(--title-color);
+  font-weight: 900;
+  margin-bottom: 0,8rem;
 }
