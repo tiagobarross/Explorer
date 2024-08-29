@@ -12,6 +12,7 @@
   --bg-color-white: #FFFFFF;
   --title-color: #B52184;
   --p-color: #312D64;
+  --border-color: #312D64;
 }
 
 body{
@@ -54,7 +55,6 @@ header p{
 
 /*MAIN*/
 main{
-  width: 100%;
   background: var(--bg-color-purple);
   padding: 5.2rem 3.9rem;
   display: flex;
@@ -89,17 +89,23 @@ figure p{
 /*CONTACT*/
 #contact-form{
   background: var(--bg-color);
-  width: 100%;
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
-  padding: 7.8rem 4.0rem;
+  align-items: center;
+  border: 1px solid red ;
+  margin: 7.8rem 4.0rem;
   gap: 2.4rem;
 }
 
 #contact-form h1{
+  top: 0;
+  left: 0;
+  margin: 1rem;
   font-size: 3.2rem;
   color: var(--title-color);
   font-weight: 900;
-  margin-bottom: 0,8rem;
+}
+
+.input-container{
+  border: 1px solid var(--border-color)
 }
