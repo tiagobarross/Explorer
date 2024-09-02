@@ -87,25 +87,45 @@ figure p{
 /*MAIN*/
 
 /*CONTACT*/
-#contact-form{
-  background: var(--bg-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid red ;
-  margin: 7.8rem 4.0rem;
-  gap: 2.4rem;
+form{
+  max-width: 60rem;
+  margin: 2rem auto;
+  padding: 1rem;
 }
 
-#contact-form h1{
-  top: 0;
-  left: 0;
-  margin: 1rem;
+fieldset{
+  border: none;
+  padding: 2rem;
+}
+
+legend{
+  font-weight: 900;
   font-size: 3.2rem;
   color: var(--title-color);
-  font-weight: 900;
 }
 
 .input-container{
-  border: 1px solid var(--border-color)
+  position: relative;
+  margin-bottom: 1.5rem;
 }
+
+.input-container input{
+  width: 100%;
+  padding: 1rem 1rem 1rem 4rem;
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+}
+
+.input-container input:focus{
+  border-color: var(--title-color);
+  outline: none;
+}
+
+.input-container .icon{
+  position: absolute;
+  margin-left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+/*CONTACT*/
