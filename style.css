@@ -88,6 +88,7 @@ figure p{
 
 /*CONTACT*/
 form{
+  font-size: 1.6rem;
   max-width: 60rem;
   margin: 2rem auto;
   padding: 1rem;
@@ -114,6 +115,12 @@ legend{
   padding: 1rem 1rem 1rem 4rem;
   border: 1px solid var(--border-color);
   border-radius: 1rem;
+  background-color: var(--bg-color);
+}
+
+.input-container input::placeholder{
+  font-weight: 600;
+  color: var(--p-color);
 }
 
 .input-container input:focus{
@@ -128,4 +135,45 @@ legend{
   transform: translateY(-50%);
   pointer-events: none;
 }
+
+textarea{
+  width: 35rem;
+  height: 13rem;
+  padding: 1.2rem 1.6rem;
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  outline: none;
+  font-size: 1.6rem;
+  background-color: var(--bg-color);
+}
+
+textarea::placeholder{
+  color: var(--p-color);
+}
+
+textarea:focus{
+  border: 1px solid var(--title-color);
+}
+
+button{
+  padding: 1.1rem 1.6rem;
+  background: var(--bg-color-purple);
+  border: none;
+  border-radius: 1rem;
+  color: var(--bg-color-white);
+}
+
+button:hover{
+  background: var(--p-color);
+}
 /*CONTACT*/
+
+/*FOOTER*/
+footer{
+  text-align: center;
+  background: var(--bg-color-purple);
+  width: 100%;
+  padding: 3.2rem ;
+  font-size: 2rem;
+  color: var(--bg-color-white);
+}
