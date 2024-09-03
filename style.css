@@ -177,3 +177,44 @@ footer{
   font-size: 2rem;
   color: var(--bg-color-white);
 }
+/*FOOTER*/
+
+/* Media query para telas acima de 1440px */
+@media (min-width: 1440px) {
+  
+  /* HEADER */
+  header {
+    flex-direction: row; /* Alinhar os elementos do header em linha */
+    justify-content: space-between; /* Espaço entre os elementos */
+    width: 80%; /* Definir uma largura para o header */
+    margin-bottom: 2rem; /* Ajustar a margem inferior para espaçamento */
+  }
+
+  #header-text {
+    text-align: left; /* Alinhar o texto à esquerda */
+  }
+
+  /* MAIN */
+  main {
+    flex-direction: row; /* Alinhar os cards em linha */
+    gap: 3rem; /* Ajustar o espaçamento entre os cards */
+    justify-content: space-around; /* Distribuir o espaço entre os cards */
+    width: 100%; /* Definir uma largura para o main */
+    margin: auto; /* Centralizar o main */
+  }
+
+  form{
+    display: flex;
+    justify-content: space-between;
+    gap: 9.2rem;
+  }
+
+  #stars{
+    display: inline;
+  }
+
+  figure {
+    flex: 1; /* Distribuir os figures igualmente */
+    max-width: 30%; /* Definir uma largura máxima para os cards */
+  }
+}
