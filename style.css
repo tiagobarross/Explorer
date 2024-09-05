@@ -26,30 +26,40 @@ body{
 /*HEADER*/
 header{
   display: flex;
-  flex-direction: column; 
-  text-align: center;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  gap: 3.5rem;
+  align-items: center;
+  padding: 0 3.4rem 9.3rem 3.2rem;
+  width: 100%;
+}
+
+header .astronaut{
+  margin: 0 auto;
 }
 
 header h1{
   color: var(--title-color);
   font-size: 3.2rem;
   font-weight: 900;
+  text-align: center;
 }
 
 header p{
   color: var(--p-color);
   font-size: 2.0rem;
   font-weight: 400;
-
+  text-align: center;
+  margin-bottom: 3.5rem;
 }
 
-#arrow{
+.arrow{
   width: 5.8rem;
   height: 10.5rem;
   margin-bottom: 9.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 /*HEADER*/
 
@@ -87,6 +97,12 @@ figure p{
 /*MAIN*/
 
 /*CONTACT*/
+#contact{
+  width: 100%;
+  height: 100%;
+  padding: 7.8rem 3.9rem 6.5rem;
+}
+
 form{
   font-size: 1.6rem;
   max-width: 60rem;
@@ -137,7 +153,7 @@ legend{
 }
 
 textarea{
-  width: 35rem;
+  width: 100%;
   height: 13rem;
   padding: 1.2rem 1.6rem;
   border: 1px solid var(--border-color);
@@ -179,21 +195,47 @@ footer{
 }
 /*FOOTER*/
 
-/* Media query para telas acima de 1440px */
+/* @media */
+
 @media (min-width: 1440px) {
-  
-  /* HEADER */
+ /* HEADER */
   header {
-    flex-direction: row; /* Alinhar os elementos do header em linha */
-    justify-content: space-between; /* Espaço entre os elementos */
-    width: 80%; /* Definir uma largura para o header */
-    margin-bottom: 2rem; /* Ajustar a margem inferior para espaçamento */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2.9rem 10.3rem 10.9rem;
+    max-height: 83.6rem;
   }
 
-  #header-text {
-    text-align: left; /* Alinhar o texto à esquerda */
+  .header-content {
+    order: 1;
+    margin-top: 31.2rem;
   }
 
+  .astronaut{
+    order: 2;
+    width: 72rem;
+    height: 73rem;
+  }
+
+  .header-content h1{
+    text-align: start;
+    font-size: 5.8rem;
+    line-height: 7.3rem;
+    margin: 0 0 0.8rem;
+  }
+
+  .header-content p{
+    text-align: start;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    margin-bottom: 17.9rem;
+  }
+
+  .arrow{
+    margin: 0;
+    justify-content: flex-end;
+  }
   /* MAIN */
   main {
     flex-direction: row; /* Alinhar os cards em linha */
@@ -203,18 +245,44 @@ footer{
     margin: auto; /* Centralizar o main */
   }
 
-  form{
-    display: flex;
-    justify-content: space-between;
-    gap: 9.2rem;
-  }
-
-  #stars{
-    display: inline;
-  }
-
   figure {
     flex: 1; /* Distribuir os figures igualmente */
     max-width: 30%; /* Definir uma largura máxima para os cards */
+  }
+
+  figure img{
+    width: 9.7rem;
+    height: 9.7rem;
+  }
+
+  figure h1{
+    font-size: 3.6rem;
+  }
+
+  figure p{
+    font-size: 2rem;
+  }
+
+  /* FORM */
+  #contact{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 9.2rem;
+    padding: 0;
+    height: 62.2rem;
+    margin: 0 auto;
+    background: url(./assets/stars.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  #contact form{
+    flex: 1;
+    margin-left: 10.9rem;
+  }
+
+  .stars{
+    flex: 1;
   }
 }
