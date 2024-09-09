@@ -78,6 +78,25 @@ figure{
   padding: 2.6rem 2.8rem;
 }
 
+.card-1{
+  opacity: 0;
+  transition: opacity 0,5s ease-in-out;
+}
+
+.card-2{
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.card-3{
+  opacity: 0;
+  transition: opacity 1,5s ease-in-out;
+}
+
+.visible{
+  opacity: 1;
+}
+
 figure img{
   width: 8.0rem;
   height: 8.0rem;
