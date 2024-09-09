@@ -19,17 +19,17 @@
     </div><!--header-content-->
   </header>
   <main>
-    <figure class="card-1" class="visible">
+    <figure class="card-1">
         <img src="./assets/b-planet.svg" alt="planeta azul">
         <figcaption>Não pare nunca</figcaption>
         <p>Se você deseja ter sucesso nos estudos, é fundamental que você adote uma mentalidade de "não pare nunca". Estudar de forma consistente e contínua é a chave para o progresso e a conquista de seus objetivos.</p>
     </figure>
-    <figure class="card-2" class="visible">
+    <figure class="card-2">
         <img src="./assets/o-planet.svg" alt="planeta laranja">
         <figcaption>Só volta</figcaption>
         <p>Se você parou ou perdeu o ritmo em alguma atividade ou projeto, saiba que nunca é tarde para recomeçar. Às vezes, as circunstâncias podem mudar, ou podemos nos sentir desmotivados ou sobrecarregados.</p>
     </figure>
-    <figure class="card-3" class="visible">
+    <figure class="card-3">
         <img src="./assets/p-planet.svg" alt="planeta rosa">
         <figcaption>Siga seu ritmo</figcaption>
         <p>Avançar pouco a pouco mantém progresso constante em objetivos, evitando parar ou desistir. Mesmo pequenos passos nos aproximam do destino e motivam a continuidade. Não subestime o poder de cada ação rumo ao objetivo final.</p>
@@ -60,5 +60,25 @@
   <footer>
     © 2023 - Rocketseat Explorer
   </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Seleciona todos os elementos figure
+      const cards = document.querySelectorAll("figure");
+  
+      // Configura o IntersectionObserver
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          // Adiciona a classe 'visible' se o card estiver na visualização
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      });
+  
+      // Observa cada card
+      cards.forEach((card) => observer.observe(card));
+    });
+  </script>  
 </body>
 </html>
